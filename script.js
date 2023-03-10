@@ -5,8 +5,12 @@ const btn = document.getElementById("botonCalcular");
 const pResult = document.getElementById("result");
 
 function botonOnClick() {
-  const suma = Number(input1.value) + Number(input2.value);
+  const suma = +input1.value + +input2.value;
   pResult.append(`El resultado es ${suma}`);
-  debugger;
-  pResult.innerText = "Hola";
+}
+
+function botonReiniciar() {
+  input1.value = "";
+  input2.value = "";
+  pResult.innerText = "";
 }
