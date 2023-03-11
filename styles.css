@@ -1,0 +1,83 @@
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+body {
+  border: 1px solid;
+  border-radius: 20px;
+  width: 500px;
+  margin: 20px;
+  padding: 10px;
+  color: white;
+  background-color: rgb(23, 22, 22);
+}
+
+#titulo {
+  font-size: 50px;
+  text-align: center;
+  margin: 15px;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+  font-family: monospace;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.numero {
+  margin: 5px;
+  width: 300px;
+  height: 40px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 25px;
+  font: bold;
+  font-family: monospace;
+}
+
+#result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin: 5px;
+  width: 290px;
+  height: 60px;
+  font-size: 25px;
+  border-radius: 10px;
+  font-family: monospace;
+  background-color: rgba(185, 185, 185, 0.663);
+  border: 3px solid white;
+  color: rgba(170, 162, 162, 0.663);
+}
+
+input::placeholder {
+  font-size: 18px;
+}
+
+.boton:hover {
+  background-color: rgb(74, 140, 91);
+  color: white;
+  cursor: pointer;
+}
+
+.boton {
+  width: 100px;
+  font-size: 20px;
+  margin: 20px;
+  border-radius: 25px;
+  height: 40px;
+  width: 300px;
+  height: 40px;
+  background-color: #3498db;
+  font-family: monospace;
+}

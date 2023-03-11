@@ -5,16 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.2" />
     <title>Basic DOM Handling - Practical JavaScript Course</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="stylesmobile.css"
+      media="screen and (max-width: 450px)"
+    />
   </head>
   <body>
-    <h1 marca="Neska">Basic DOM handling</h1>
+    <h1 id="titulo">Calculator</h1>
+    <h2>Enter two numbers to add</h2>
+    <form id="formulario">
+      <input
+        class="numero"
+        type="number"
+        id="calculo1"
+        placeholder="Type a number"
+      />
+      <input
+        class="numero"
+        type="number"
+        id="calculo2"
+        placeholder="Type a number"
+      />
 
-    <input id="calculo1" placeholder="Escribe algo aquí" />
-    <input id="calculo2" placeholder="Escribe algo aquí" />
-
-    <button id="botonCalcular" onclick="botonOnClick()">Calcular</button>
-    <button id="botonLimpiar" onclick="botonReiniciar()">Reiniciar</button>
-    <p id="result"></p>
+      <button class="boton" type="button" id="botonCalcular">Calculate</button>
+      <p id="result">Result</p>
+      <button class="boton" type="button" id="botonLimpiar">All Clear</button>
+    </form>
     <script src="./script.js"></script>
   </body>
 </html>
