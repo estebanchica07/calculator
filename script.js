@@ -6,6 +6,13 @@ const btnCalcular = document.getElementById("botonCalcular");
 const btnReiniciar = document.getElementById("botonLimpiar");
 const pResult = document.getElementById("result");
 
+function activarBoton() {
+  if (input1.value !== "" && input2.value !== "") {
+    btnCalcular.style.color = "white";
+    btnCalcular.style.backgroundColor = "red";
+  }
+}
+
 btnCalcular.addEventListener("click", sumarInputs);
 
 btnReiniciar.addEventListener("click", botonReiniciar);
@@ -22,6 +29,9 @@ input2.addEventListener("keydown", function (e) {
   }
 });
 
+input2.addEventListener("input", activarBoton);
+input1.addEventListener("input", activarBoton);
+
 function sumarInputs() {
   if (input1.value !== "" && input2.value !== "") {
     pResult.innerText = "";
@@ -29,10 +39,12 @@ function sumarInputs() {
     pResult.append(`= ${suma}`);
     pResult.style.color = "white";
     pResult.style.fontSize = "30px";
+    pResult.style.border = "3px solid white";
   } else {
     pResult.innerText = "Enter two numeric values";
     pResult.style.fontSize = "20px";
-    pResult.style.color = "#274930";
+    pResult.style.color = "#B14545";
+    pResult.style.border = "3px solid red";
   }
 }
 
@@ -42,4 +54,7 @@ function botonReiniciar() {
   pResult.innerText = "Result";
   pResult.style.color = "#A2AABF";
   pResult.style.fontSize = "20px";
+  pResult.style.border = "3px solid white";
+  btnCalcular.style.backgroundColor = "rgb(74, 140, 91)";
+  btnCalcular.style.color = "black";
 }

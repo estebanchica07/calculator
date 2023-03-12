@@ -1,0 +1,17 @@
+body {
+  width: 350px;
+  margin: 0px;
+}
+
+.form {
+  width: 200 px;
+}
+
+.numero,
+.boton {
+  width: 250px;
+}
+
+#result {
+  width: 270px;
+}
