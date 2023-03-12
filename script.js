@@ -28,9 +28,11 @@ function sumarInputs() {
     const suma = +input1.value + +input2.value;
     pResult.append(`= ${suma}`);
     pResult.style.color = "white";
+    pResult.style.fontSize = "30px";
   } else {
     pResult.innerText = "Enter two numeric values";
     pResult.style.fontSize = "20px";
+    pResult.style.color = "#274930";
   }
 }
 
@@ -39,4 +41,5 @@ function botonReiniciar() {
   input2.value = "";
   pResult.innerText = "Result";
   pResult.style.color = "#A2AABF";
+  pResult.style.fontSize = "20px";
 }
