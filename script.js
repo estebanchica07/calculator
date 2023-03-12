@@ -40,6 +40,10 @@ function sumarInputs() {
     pResult.style.color = "white";
     pResult.style.fontSize = "30px";
     pResult.style.border = "3px solid white";
+    btnCalcular.style.backgroundColor = "rgb(74, 140, 91)";
+    btnCalcular.style.color = "black";
+    btnReiniciar.style.color = "white";
+    btnReiniciar.style.backgroundColor = "red";
   } else {
     pResult.innerText = "Enter two numeric values";
     pResult.style.fontSize = "20px";
@@ -57,4 +61,6 @@ function botonReiniciar() {
   pResult.style.border = "3px solid white";
   btnCalcular.style.backgroundColor = "rgb(74, 140, 91)";
   btnCalcular.style.color = "black";
+  btnReiniciar.style.color = "black";
+  btnReiniciar.style.backgroundColor = "rgb(74, 140, 91)";
 }
