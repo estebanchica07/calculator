@@ -10,6 +10,18 @@ btnCalcular.addEventListener("click", sumarInputs);
 
 btnReiniciar.addEventListener("click", botonReiniciar);
 
+input1.addEventListener("keydown", function (e) {
+  if (e.keyCode === 13) {
+    btnCalcular.click();
+  }
+});
+
+input2.addEventListener("keydown", function (e) {
+  if (e.keyCode === 13) {
+    btnCalcular.click();
+  }
+});
+
 function sumarInputs() {
   if (input1.value !== "" && input2.value !== "") {
     pResult.innerText = "";
