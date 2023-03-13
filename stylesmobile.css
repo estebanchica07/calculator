@@ -1,23 +1,16 @@
-body {
-  width: 80%;
-  height: 80%;
-  margin: 2px;
-  padding: 0px;
-}
-
-.form {
-  width: 200 px;
-}
-
 .numero,
 .boton {
-  width: 250px;
+  width: 280px;
 }
 
 #result {
-  width: 270px;
+  width: 220px;
 }
 
 h2 {
   font-size: 15px;
+}
+
+#container {
+  width: 350px;
 }

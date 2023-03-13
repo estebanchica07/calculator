@@ -9,30 +9,34 @@
     <link
       rel="stylesheet"
       href="stylesmobile.css"
-      media="screen and (max-width: 460px)"
+      media="screen and (max-width: 450px)"
     />
   </head>
   <body>
-    <h1 id="titulo">Calculator</h1>
-    <h2>Enter two numbers to add</h2>
-    <form id="formulario">
-      <input
-        class="numero"
-        type="number"
-        id="calculo1"
-        placeholder="Type a number"
-      />
-      <input
-        class="numero"
-        type="number"
-        id="calculo2"
-        placeholder="Type a number"
-      />
+    <div id="container">
+      <h1 id="titulo">Calculator</h1>
+      <h2>Enter two numbers to add</h2>
+      <form id="formulario">
+        <input
+          class="numero"
+          type="number"
+          id="calculo1"
+          placeholder="Type a number"
+        />
+        <input
+          class="numero"
+          type="number"
+          id="calculo2"
+          placeholder="Type a number"
+        />
 
-      <button class="boton" type="button" id="botonCalcular">Calculate</button>
-      <p id="result">Result</p>
-      <button class="boton" type="button" id="botonLimpiar">All Clear</button>
-    </form>
-    <script src="./script.js"></script>
+        <button class="boton" type="button" id="botonCalcular">
+          Calculate
+        </button>
+        <p id="result">Result</p>
+        <button class="boton" type="button" id="botonLimpiar">All Clear</button>
+      </form>
+      <script src="./script.js"></script>
+    </div>
   </body>
 </html>
