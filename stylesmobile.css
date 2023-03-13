@@ -1,6 +1,7 @@
 body {
-  width: 350px;
-  margin: 0px;
+  width: 300px;
+  margin: 2px;
+  padding: 0px;
 }
 
 .form {
@@ -14,4 +15,8 @@ body {
 
 #result {
   width: 270px;
+}
+
+h2 {
+  font-size: 15px;
 }
