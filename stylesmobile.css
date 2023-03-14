@@ -1,6 +1,7 @@
 .numero,
 .boton {
   width: 280px;
+  color: black;
 }
 
 #result {
@@ -12,5 +13,5 @@ h2 {
 }
 
 #container {
-  width: 350px;
+  width: 90%;
 }
